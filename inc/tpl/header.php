@@ -2,7 +2,7 @@
 <html lang="fr-FR" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>splashscreen</title>
     <link rel="stylesheet" href="assets/css/zz-all.css" />
     <script src="assets/js/mootools-yui-compressed.js"></script>
     <script src="assets/js/events.js"></script>
