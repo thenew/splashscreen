@@ -21,6 +21,10 @@ menu,nav,section,video,abbr,eventsource,mark,meter,time,progress,output,bb {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent no-repeat top left;
+    opacity: .9999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 article,aside,audio,canvas,datagrid,datalist,details,dialog,figure,
 figcaption,footer,header,hgroup,menu,nav,section,video {display:block;}
@@ -47,3 +51,8 @@ video,img,object {max-width:100%;height:auto}
 iframe{border:0}
 /* Bug with Firefox and buttons */
 button::-moz-focus-inner {border:0;padding:0;margin:0}
+input, select, button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Georgia',serif;
+    background-color: #efefef;
+}
+
+.header {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    background-color: #555;
+    background-color: rgba(0,0,0,.5);
+}
+
+.header .logo {
+    display: table-cell;
+    text-align: center;
+    font-size: 69px;
+    font-style: italic;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #efefef;
+    color: rgba(255,255,255,.95);
+}
+
+.container {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding-top: 300px;
+}
+
+.splash-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.splash-form {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.splash-form .splash-email {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.splash-form label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #696969;
+    *display: inline;
+    *zoom: 1;
+}
+
+.splash-form .wrap {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.splash-form .splash-spam-input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    text-indent: 10px;
+    font-family: 'Gerogia',serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    color: rgba(0,0,0,.5);
+    background-color: #cdcdcd;
+    background-color: rgba(0,0,0,.1);
+}
+
+::-webkit-input-placeholder {
+    color: #555;
+    color: rgba(0,0,0,.5);
+}
+
+:-moz-placeholder {
+    color: #555;
+    color: rgba(0,0,0,.5);
+}
+
+:-ms-placeholder {
+    color: #555;
+    color: rgba(0,0,0,.5);
+}
+
+.splash-form input:focus,
+.splash-form input:hover {
+    border-color: #999;
+    border-color: rgba(0,0,0,.3);
+}
+
+.splash-form .submit {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    color: #fff;
+    color: rgba(255,255,255,.95);
+    background-color: #333;
+    background-color: rgba(0,0,0,.7);
+}
+
+.splash-form .splash-spam-input:invalid + .submit:focus,
+.splash-form .splash-spam-input:invalid + .submit:hover,
+.splash-form .splash-spam-input:invalid + .submit {
+    color: #fff;
+    color: rgba(255,255,255,.95);
+    opacity: .2;
+    background-color: #666;
+    background-color: rgba(0,0,0,.5);
+    cursor: not-allowed;
+}
+
+.splash-form .submit:focus,
+.splash-form .submit:hover {
+    color: #222;
+    color: rgba(0,0,0,.9);
+    opacity: .8;
+    background-color: #eee;
+    background-color: rgba(255,255,255,.9);
+}
+
+/* Messages
+   ----------------------- */
+
+.splash-form-feedback {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 600px;
+    margin-bottom: 15px;
+    margin-left: -300px;
+    padding: 10px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    color: #efefef;
+    color: rgba(255,255,255,.95);
+    background-color: #333;
+    background-color: rgba(0,0,0,.7);
+}

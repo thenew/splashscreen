@@ -11,6 +11,7 @@ License: MIT
    Règlages de base
    ------------------------------------------------------- */
 
+body,
 html {
     height: 100%;
 }
@@ -154,30 +155,30 @@ a:hover img {
    Transitions
    ------------------------------------------------------- */
 
-.trans-col,
+.trans-color,
 a {
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+    -webkit-transition: color .2s, background-color .2s, border-color .2s;
+    -moz-transition: color .2s, background-color .2s, border-color .2s;
+    -ms-transition: color .2s, background-color .2s, border-color .2s;
+    -o-transition: color .2s, background-color .2s, border-color .2s;
+    transition: color .2s, background-color .2s, border-color .2s;
 }
 
 .aimg,
 .aimginv,
-.trans-opa,
+.trans-opacity,
 a img {
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
 }
 
 .trans-all {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
 }

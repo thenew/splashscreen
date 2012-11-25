@@ -8,9 +8,9 @@ $csv_head = array('Name','E-mail','Notes','Section 1 - Description','Section 1 -
 $splash_log = "";
 if(isset($_POST) && !empty($_POST)) {
     if(empty($_POST['splash_email']) || $_POST['splash_email'] != "hello@thenew.fr") {
-        $splash_log .= "Le filtre anti-spam a détecté une intrusion.";
+        $splash_log .= "The spam filter has detected an intrusion.";
     } else if(empty($_POST['splash_spam']) || !filter_var($_POST['splash_spam'], FILTER_VALIDATE_EMAIL)) {
-        $splash_log .= "L'email n'est pas correct.";
+        $splash_log .= "The email is not correct.";
     } else {
         $path = dirname(__FILE__).'/../mails/';
         $file = $path.'mails.csv';
@@ -21,6 +21,7 @@ if(isset($_POST) && !empty($_POST)) {
         }
         @chmod($path, 0755);
         @file_put_contents($file, date('c').'\n'.implode('\n', $mail).'\n', FILE_APPEND | LOCK_EX);
+        $splash_log .= "Thanks. Your email has been registered. You will hear about us soon.";
     }
 
 }
