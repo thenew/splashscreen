@@ -20,7 +20,7 @@ include dirname(__FILE__).'/inc/tpl/header.php';
             <div class="box splash-spam">
                 <label for="splash_spam">Leave us your email to get the latest news.</label>
                 <div class="wrap">
-                    <input type="email" name="splash_spam" class="splash-spam-input trans-color" placeholder="john@doe.com" required />
+                    <input type="email" name="splash_spam" class="splash-spam-input trans-color" placeholder="john@doe.com" tabindex="1" required />
                     <button type="submit" class="submit trans-all">OK</button>
                 </div>
             </div>

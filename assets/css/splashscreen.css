@@ -5,6 +5,10 @@ body {
     background-color: #efefef;
 }
 
+/* ----------------------------------------------------------
+   Header
+   ------------------------------------------------------- */
+
 .header {
     display: table;
     position: absolute;
@@ -40,6 +44,10 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+
+/* ----------------------------------------------------------
+   Form
+   ------------------------------------------------------- */
 
 .splash-form {
     position: relative;
